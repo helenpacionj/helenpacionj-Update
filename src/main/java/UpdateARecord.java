@@ -38,7 +38,8 @@ public class UpdateARecord {
         /**
          * Problem 1: Update Alexa's last name to be 'Rush' in the site_user table.
          */
-        String sql = FileUtil.parseSQLFile("problem1.sql");
+        // String sql = FileUtil.parseSQLFile("problem1.sql");
+           String sql = " UPDATE site_user SET lastname = 'Rush' WHERE id=2; "; 
 
         try {
             Connection connection = ConnectionUtil.getConnection();
